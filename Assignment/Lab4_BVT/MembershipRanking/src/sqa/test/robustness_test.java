@@ -18,17 +18,22 @@ class robustness_test {
 		  "55000,4,550,Gold",
 		  "100000,4,550,Gold",
 		  "100001,4,550,Gold",
-		  "Integer.MAX_VALUE,4,550,Gold",
+		  "100002,4,550,Gold",
+		  "55000,0,550,Gold",
 		  "55000,1,550,Silver",
 		  "55000,2,550,Silver",
 		  "55000,4,550,Gold",
 		  "55000,6,550,Gold",
 		  "55000,7,550,Gold",
+		  "55000,8,550,Gold",
+		  "55000,4,99,Silver",
 		  "55000,4,100,Silver",
 		  "55000,4,101,Silver",
-		  "55000,4,550,Gold",
-		  "55000,4,999,Gold",
-		  "55000,4,1000,Gold"
+		  "55000,4,550,Silver",
+		  "55000,4,999,Silver",
+		  "55000,4,1000,Silver",
+		  "55000,4,1001,Silver"
+		  
 	})
 	void robustness_testCalculateMembershipRank(int purchaseTotal, int frequency, int pointCollected, String expectedRank) {
 		Ranking obj = new Ranking();
