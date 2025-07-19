@@ -14,19 +14,19 @@ class normal_test {
 
 	@ParameterizedTest
 	@CsvSource({
-		  "10000,4,550,Silver",
-		  "10001,4,550,Silver",
-		  "55000,4,550,Gold",
-		  "100000,4,550,Gold",
-		  "100001,4,550,Gold",
-		  "55000,1,550,Silver",
-		  "55000,2,550,Silver",
-		  "55000,6,550,Gold",
-		  "55000,7,550,Gold",
-		  "55000,4,100,Silver",
-		  "55000,4,101,Silver",
-		  "55000,4,999,Gold",
-		  "55000,4,1000,Gold"
+		  "0,15,500,Standard",
+		  "1,15,500,Standard",
+		  "50000,15,500,Gold",
+		  "100000,15,500,Gold",
+		  "100001,15,500,Gold",
+		  "50000,0,500,Standard",
+		  "50000,1,500,Silver",
+		  "50000,30,500,Gold",
+		  "50000,31,500,Gold",
+		  "50000,15,0,Standard",
+		  "50000,15,1,Standard",
+		  "50000,15,999,Gold",
+		  "50000,15,1000,Gold"
 	})
 	void normal_testCalculateMembershipRank(int purchaseTotal, int frequency, int pointCollected, String expectedRank) {
 		Ranking obj = new Ranking();
