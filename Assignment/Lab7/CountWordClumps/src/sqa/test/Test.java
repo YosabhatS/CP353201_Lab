@@ -24,7 +24,7 @@ class Test {
 
 
 	}, nullValues = {"null"})
-	
+
 	void test(String arrayStr, int expected) {
 		CountWordClumps obj = new CountWordClumps();
 		int[] input;
